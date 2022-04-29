@@ -2,7 +2,7 @@
 # Sound event localization and detection (SELD) task
 [Sound event localization and detection (SELD)](https://www.aane.in/research/computational-audio-scene-analysis-casa/sound-event-localization-detection-and-tracking) is the combined task of identifying the temporal onset and offset of a sound event, tracking the spatial location when active, and further associating a textual label describing the sound event.
    
-## Training the SELDnet
+## Training the network
 
 In order to train the network follow the steps below.
 
