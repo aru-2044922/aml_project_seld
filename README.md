@@ -3,8 +3,15 @@
 [Sound event localization and detection (SELD)](https://www.aane.in/research/computational-audio-scene-analysis-casa/sound-event-localization-detection-and-tracking) is the combined task of identifying the temporal onset and offset of a sound event, tracking the spatial location when active, and further associating a textual label describing the sound event.
    
 ## Training the network
+The network can be re-created and training using either the provided jupyter notebook or the python scripts, see further details below. Use the jupter notebook to run the tuning experiments used to choose the final architecture, and use the python scripts to train using the final architecture.
 
-In order to train the network follow the steps below.
+### Jupter Notebook
+* In order to use the provided Jupyter Notebook, update the folder path in `working_dir` variable to reflect the folder that contains the dataset
+
+* Run the cells sequentially to follow the experiments created in order to select the final architecture. The last cell trains using the final architecture.
+
+### Python Scripts
+In order to train the network with the final architecture, follow the steps below.
 
 * Update the dataset path in `parameter.py` script. For the above example, you will change `dataset_dir='base_folder/'`. Also provide a directory path `feat_label_dir` in the same `parameter.py` script where all the features and labels will be dumped.
 
