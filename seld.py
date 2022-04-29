@@ -120,15 +120,9 @@ def main(argv):
     job_id = 1 if len(argv) < 3 else argv[-1]
 
     train_splits, val_splits, test_splits = None, None, None
-    # test_splits = [1, 2, 3, 4]
-    # val_splits = [2, 3, 4, 1]
-    # train_splits = [[3, 4], [4, 1], [1, 2], [2, 3]]
-
-    # SUGGESTION: Considering the long training time, major tuning of the method can be done on the first split.
-    # Once you finlaize the method you can evaluate its performance on the complete cross-validation splits
-    test_splits = [1]
-    val_splits = [2]
-    train_splits = [[3, 4]]
+    test_splits = [1, 2, 3, 4]
+    val_splits = [2, 3, 4, 1]
+    train_splits = [[3, 4], [4, 1], [1, 2], [2, 3]]
 
     avg_scores_val = []
     avg_scores_test = []
