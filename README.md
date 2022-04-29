@@ -13,7 +13,7 @@ The network can be re-created and training using either the provided jupyter not
 ### Python Scripts
 In order to train the network with the final architecture, follow the steps below.
 
-* Update the dataset path in `parameter.py` script. For the above example, you will change `dataset_dir='base_folder/'`. Also provide a directory path `feat_label_dir` in the same `parameter.py` script where all the features and labels will be dumped.
+* Update the dataset path in `parameter.py` script. For the above example, you will change `dataset_dir='....'`. Also provide a directory path `feat_label_dir` in the same `parameter.py` script where all the features and labels will be dumped.
 
 * Extract features from the downloaded dataset by running the `batch_feature_extraction.py` script. First, update the parameters in the script, check the python file for more comments. You can now run the script as shown below. This will dump the normalized features and labels here. Since feature extraction is a one-time thing, this script is standalone and does not use the `parameter.py` file.
 
